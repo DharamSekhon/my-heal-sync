@@ -66,10 +66,10 @@ const Orders = () => {
                   {item.product.title}
                 </td> */}
                 <td className="px-4 py-2 lg:px-6 lg:py-4">
-                  {item.product.title}
+                  {item.product?.title}
                 </td>
-                <td className="px-2 py-2 lg:px-6 lg:py-4">{item.user.name}</td>
-                <td className="px-4 py-2 lg:px-6 lg:py-4">{item.price}</td>
+                <td className="px-2 py-2 lg:px-6 lg:py-4">{item.user?.name}</td>
+                <td className="px-4 py-2 lg:px-6 lg:py-4">{item?.price}</td>
                 <td className="px-4 py-2 lg:px-6 lg:py-4">
                   {item.isPaid && (
                     <div className="flex items-center">
@@ -86,7 +86,7 @@ const Orders = () => {
                   )}
                 </td>
                 <td className="text-[10px] lg:text-sm px-4 py-2 lg:px-6 lg:py-4 ">
-                  {formateDate(item.createdAt)}
+                  {formateDate(item?.createdAt)}
                 </td>
                 {/* <td className="px-6 py-4">{formateDate(item.createdAt)}</td> */}
               </tr>
