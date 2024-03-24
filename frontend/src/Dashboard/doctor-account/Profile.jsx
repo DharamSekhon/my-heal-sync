@@ -112,8 +112,8 @@ const Profile = ({ doctorData }) => {
     addItem("qualifications", {
       startingDate: "",
       endingDate: "",
-      degree: "btech",
-      university: "bbsbec",
+      degree: "",
+      university: "",
     });
   };
 
@@ -133,8 +133,8 @@ const Profile = ({ doctorData }) => {
     addItem("experiences", {
       startingDate: "",
       endingDate: "",
-      position: "Senior Surgeon",
-      hospital: "Medical hosp",
+      position: "",
+      hospital: "",
     });
   };
 
@@ -252,9 +252,54 @@ const Profile = ({ doctorData }) => {
                 className="form__input py-3.5"
               >
                 <option value="">Select</option>
-                <option value="surgeon">Surgeon</option>
-                <option value="neurologist">Neurologist</option>
-                <option value="dermatologist">Dermatologist</option>
+                <option value="Cardiac Sciences">Cardiac Sciences</option>
+                <option value="Oncology">Oncology</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Liver Transplant and Hepatobiliary Sciences">
+                  Liver Transplant and Hepatobiliary Sciences
+                </option>
+                <option value="Medical Genetics">Medical Genetics</option>
+                <option value="Pain and Palliative">Pain and Palliative</option>
+                <option value="Palliative Medicines">
+                  Palliative Medicines
+                </option>
+                <option value="Dental Science">Dental Science</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Diabetology/Endocrinology">
+                  Diabetology/Endocrinology
+                </option>
+                <option value="Emergency and Trauma">
+                  Emergency and Trauma
+                </option>
+                <option value="Endocrine Surgery">Endocrine Surgery</option>
+                <option value="ENT">ENT</option>
+                <option value="Foetal Medicine">Foetal Medicine</option>
+                <option value="Gastroenterology and Hepatobiliary Sciences">
+                  Gastroenterology and Hepatobiliary Sciences
+                </option>
+                <option value="General Sugery">General Sugery</option>
+                <option value="Haematology">Haematology</option>
+                <option value="Infectious Diseases">Infectious Diseases</option>
+                <option value="Infertility medicine">
+                  Infertility medicine{" "}
+                </option>
+                <option value="Internal Medicine">Internal Medicine</option>
+                <option value="Mental Health and Behavioural Sciences">
+                  Mental Health and Behavioural Sciences{" "}
+                </option>
+                <option value="Nephrology">Nephrology</option>
+                <option value="Neurointerventional Radiology">
+                  Neurointerventional Radiology
+                </option>
+                <option value="Neurosurgery">Neurosurgery</option>
+                <option value="Gynaecology">Gynaecology</option>
+                <option value="Opthalmology">Opthalmology</option>
+                <option value="Orthopaedics">Orthopaedics</option>
+                <option value="Plastic and Reconstructive Surgery">
+                  Plastic and Reconstructive Surgery
+                </option>
+                <option value="Radiology">Radiology</option>
+                <option value="Support Specialties">Support Specialties</option>
               </select>
             </div>
 
