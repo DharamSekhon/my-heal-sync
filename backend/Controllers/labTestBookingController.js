@@ -6,19 +6,17 @@ import Stripe from "stripe";
 export const getLabCheckoutSession = async (req, res) => {
   try {
     console.log("User ID:", req.userId);
-    
+
     const labTest = await LabTest.findById(req.params.labTestid);
-    
+
     const user = await User.findById(req.userId);
-    
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-    
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       // success_url: `${process.env.CLIENT_SITE_URL}/checkout-success`,
-      success_url: `https://heal-sync-frontend.vercel.app/checkout-success`,
+      success_url: `https://heal-sync.vercel.app/checkout-success`,
       cancel_url: `${req.protocol}://${req.get("host")}/labs/${labTest.id}`,
       customer_email: user.email,
       //   billing_address_collection: "required",

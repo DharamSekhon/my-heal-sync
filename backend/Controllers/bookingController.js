@@ -1,7 +1,3 @@
-
-
-
-
 import User from "../models/UserSchema.js";
 import Doctor from "../models/DoctorSchema.js";
 import Booking from "../models/BookingSchema.js";
@@ -14,23 +10,20 @@ export const getCheckoutSession = async (req, res) => {
     const user = await User.findById(req.userId);
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-    
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       // success_url: `${process.env.CLIENT_SITE_URL}/checkout-success`,
-      success_url: `https://heal-sync-frontend.vercel.app/checkout-success`,
+      success_url: `https://heal-sync.vercel.app/checkout-success`,
       cancel_url: `${req.protocol}://${req.get("host")}/doctors/${doctor.id}`,
       customer_email: user.email,
-    
-     
 
       client_reference_id: req.params.doctorId,
       line_items: [
         {
           price_data: {
             currency: "usd",
-            
+
             unit_amount: doctor.ticketPrice * 100,
             product_data: {
               name: doctor.name,

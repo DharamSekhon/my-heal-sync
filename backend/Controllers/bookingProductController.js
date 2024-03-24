@@ -11,13 +11,10 @@ export const getProductCheckoutSession = async (req, res) => {
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-
-
-
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       // success_url: `${process.env.CLIENT_SITE_URL}/checkout-success`,
-      success_url: `https://heal-sync-frontend.vercel.app/checkout-success`,
+      success_url: `https://heal-sync.vercel.app/checkout-success`,
       cancel_url: `${req.protocol}://${req.get("host")}/products/${product.id}`,
       customer_email: user.email,
       // billing_address_collection: "required",
