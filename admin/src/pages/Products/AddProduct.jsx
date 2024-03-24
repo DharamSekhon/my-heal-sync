@@ -158,7 +158,7 @@ const AddProduct = ({ productData }) => {
                 // onClick={AddTestHandler}
                 className="bg-primaryColor text-white text-[18px] leading-[30px] w-full py-3 px-4 rounded-lg"
               >
-                Add Test
+                Add Product
               </button>
             </div>
           </form>

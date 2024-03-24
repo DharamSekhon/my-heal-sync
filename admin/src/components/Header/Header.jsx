@@ -15,10 +15,7 @@ const navLinks = [
     path: "/doctors-section",
     display: "Doctors",
   },
-  {
-    path: "/orders-section",
-    display: "Orders",
-  },
+
   {
     path: "/patients-section",
     display: "Patients",
@@ -30,6 +27,10 @@ const navLinks = [
   {
     path: "/tests-section",
     display: "Tests",
+  },
+  {
+    path: "/orders-section",
+    display: "Orders",
   },
 
   {

@@ -33,6 +33,12 @@ const Products = () => {
     error,
   } = useFetchData(`${BASE_URL}/products?query=${debounceQuery}`);
   //   console.log(products);
+
+  const limitTitle = (title) => {
+    const words = title.split(" ");
+    return words.slice(0, 4).join(" ");
+  };
+
   return (
     <>
       <title>Medicines</title>
@@ -65,12 +71,15 @@ const Products = () => {
               {products.map((product) => (
                 <div class="max-w-[60%] max-h-[15rem] bg-white border border-gray-200 rounded-lg shadow ">
                   <a href={`/products/${product._id}`}>
-                    <img className="p-1 rounded-lg" src={product.photo} />
+                    <img
+                      className="m-auto w-[6rem] h-[7rem] rounded-lg"
+                      src={product.photo}
+                    />
                   </a>
-                  <div class="px-5 pb-5">
+                  <div class="px-5 pb-5 lg:max-w-[12rem] lg:max-h-[8rem]">
                     <a href={`/products/${product._id}`}>
-                      <h5 class="text-lg mt-5 font-semibold tracking-tight text-gray-900 ">
-                        {product.title}
+                      <h5 class="text-md mt-5 font-semibold tracking-tight text-gray-900 ">
+                        {limitTitle(product.title)}
                       </h5>
                     </a>
 
