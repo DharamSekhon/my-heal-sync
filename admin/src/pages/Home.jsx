@@ -114,7 +114,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="  p-5 w-[90%] lg:w-[57%] ml-5 lg:ml-5 lg:mt-5 h-full lg:h-[25rem] mr-5 grid grid-cols-1 lg:grid-cols-2 shadow-md  ">
-            <div className=" mt-5 ml-[4rem] lg:ml-[5rem] rounded-[25px] bg-slate-50 shadow-md flex mb-2 p-2 justify-between items-center h-[6rem] w-[18rem]">
+            <div className=" mt-5 ml-[2rem] lg:ml-[5rem] rounded-[25px] bg-slate-50 shadow-md flex mb-2 p-2 justify-between items-center h-[6rem] w-[18rem]">
               <div className="p-2">
                 <Link to="/doctors-section">
                   <h1 className="font-semibold text-[18px]">Doctors</h1>
@@ -130,7 +130,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="  rounded-[25px] ml-[4rem] lg:ml-5 mt-5 bg-slate-50 shadow-md flex p-2 mb-2  justify-between items-center h-[6rem] w-[18rem]">
+            <div className="  rounded-[25px] ml-[2rem] lg:ml-5 mt-5 bg-slate-50 shadow-md flex p-2 mb-2  justify-between items-center h-[6rem] w-[18rem]">
               <div className="p-2">
                 <Link to="/patients-section">
                   <h1 className="font-semibold text-[18px]">Patients</h1>
@@ -146,7 +146,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="ml-[4rem] lg:ml-[5rem] mt-5 rounded-[25px] bg-slate-50 shadow-md flex p-2 mb-2   justify-between items-center h-[6rem] w-[18rem]">
+            <div className="ml-[2rem] lg:ml-[5rem] mt-5 rounded-[25px] bg-slate-50 shadow-md flex p-2 mb-2   justify-between items-center h-[6rem] w-[18rem]">
               <div className="p-2">
                 <Link to="/appointments-section">
                   <h1 className="font-semibold text-[18px]">Appointments</h1>
@@ -162,7 +162,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=" ml-[4rem] lg:ml-5 mt-5 rounded-[25px] bg-slate-50 shadow-md flex p-2 mb-2  justify-between items-center h-[6rem] w-[18rem]">
+            <div className=" ml-[2rem] lg:ml-5 mt-5 rounded-[25px] bg-slate-50 shadow-md flex p-2 mb-2  justify-between items-center h-[6rem] w-[18rem]">
               <div className="p-2">
                 <Link to="/orders-section">
                   <h1 className="font-semibold text-[18px]">Orders</h1>
@@ -178,7 +178,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=" mt-5 ml-[4rem] lg:ml-[5rem]  rounded-[25px] bg-slate-50 shadow-md flex p-2  mb-4 justify-between items-center h-[6rem] w-[18rem] ">
+            <div className=" mt-5 ml-[2rem] lg:ml-[5rem]  rounded-[25px] bg-slate-50 shadow-md flex p-2  mb-4 justify-between items-center h-[6rem] w-[18rem] ">
               <div className="p-2">
                 <Link to="/tests-section">
                   <h1 className="font-semibold text-[18px]">Test Booked</h1>
@@ -194,7 +194,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=" mt-5 ml-[4rem] lg:ml-5 rounded-[25px] bg-slate-50 shadow-md flex p-2 align-middle  mb-4 justify-between items-center h-[6rem] w-[18rem] ">
+            <div className=" mt-5 ml-[2rem] lg:ml-5 rounded-[25px] bg-slate-50 shadow-md flex p-2 align-middle  mb-4 justify-between items-center h-[6rem] w-[18rem] ">
               <div className="p-2">
                 <h1 className="font-semibold text-[18px]">Revenue</h1>
                 <p className="font-medium text-textColor text-[15px]">
@@ -209,10 +209,10 @@ const Home = () => {
 
           <div className="  shadow-md border-2 w-[90%] lg:w-[37%] ml-5 mt-5 h-[25rem] mr-5  rounded-md">
             <iframe
-              className="m-0 ml-6 lg:ml-0 w-[90%] p-0  lg:p-5 text-center"
+              className="p-2"
               width="540"
-              height="400"
-              src="https://charts.mongodb.com/charts-heal-sync-backend-fketd/embed/charts?id=65fd7f0f-8a29-4fbf-8b39-fae6541b0ecc&maxDataAge=3600&theme=light&autoRefresh=true"
+              height="380"
+              src="https://charts.mongodb.com/charts-heal-sync-backend-fketd/embed/charts?id=65fd7f0f-8a29-4fbf-8b39-fae6541b0ecc&maxDataAge=300&theme=light&autoRefresh=true"
             ></iframe>
           </div>
         </div>

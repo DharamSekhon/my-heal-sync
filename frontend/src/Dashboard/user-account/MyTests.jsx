@@ -15,6 +15,9 @@ const MyTests = () => {
     error,
   } = useFetchData(`${BASE_URL}/users/appointments/my-tests`);
 
+  
+  
+
   return (
     <div>
       {loading && !error && <Loading />}
