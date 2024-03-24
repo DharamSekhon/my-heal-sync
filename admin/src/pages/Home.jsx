@@ -209,7 +209,7 @@ const Home = () => {
 
           <div className="  shadow-md border-2 w-[90%] lg:w-[37%] ml-5 mt-5 h-[25rem] mr-5  rounded-md">
             <iframe
-              className="p-2"
+              className="p-2 lg:w-full lg:h-full w-[27rem] h-[24rem] "
               width="540"
               height="380"
               src="https://charts.mongodb.com/charts-heal-sync-backend-fketd/embed/charts?id=65fd7f0f-8a29-4fbf-8b39-fae6541b0ecc&maxDataAge=300&theme=light&autoRefresh=true"
