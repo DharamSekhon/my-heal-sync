@@ -94,31 +94,31 @@ const AddProduct = ({ productData }) => {
                 name="title"
                 value={formData.title}
                 onChange={handleInputChange}
-                placeholder="Enter Test Name"
+                placeholder="Enter Name"
                 className="form__input"
               />
             </div>
 
             <div className="mb-5">
-              <p className="form__label">Test Description:</p>
+              <p className="form__label">Product Description:</p>
               <input
                 type="text"
                 name="description"
                 value={formData.bio}
                 onChange={handleInputChange}
-                placeholder="Enter Test Name"
+                placeholder="Enter Description"
                 className="form__input"
               />
             </div>
 
             <div className="mb-5">
-              <p className="form__label">Test Price:</p>
+              <p className="form__label">Product Price:</p>
               <input
                 type="number"
                 name="price"
                 value={formData.price}
                 onChange={handleInputChange}
-                placeholder="Enter Test Price"
+                placeholder="Enter Product Price"
                 className="form__input"
               />
             </div>
